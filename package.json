@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "app-xbox-live": "^1.2.8",
+    "bedrock-protocol": "^3.43.0",
+    "discord.js": "^14.18.0",
+    "os": "^0.1.2",
+    "punycode": "^2.3.1",
+    "uuid": "^11.1.0"
+  }
+}
