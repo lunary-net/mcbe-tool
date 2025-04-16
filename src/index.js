@@ -7,7 +7,6 @@ const { RealmAPI } = require('prismarine-realms');
 const fs = require('fs');
 const axl = require('app-xbox-live');
 const path = require('path');
-const { get } = require('http');
 require('punycode')
 
 const rl = readline.createInterface({
@@ -325,8 +324,8 @@ rl.question('Choose an option (1, 2, 3, 4, 5, or 6): ', (option) => {
                         conLog: (log) => console.log(log)
                     });
                     client.on('start_game', (packet) => {
-                        console.log(packet.seed);
-                    });
+                        console.log(packet.seed.toString());
+                    });  
                 }
                 getSeed(realmInvite)
                 rl.close();
